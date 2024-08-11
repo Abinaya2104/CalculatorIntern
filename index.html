@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="/icon.webp">
+    <link rel="stylesheet" href="/styles.css" >
+</head>
+<body >
+    <div class="bgg">
+    <h1 class="ti">CALCULATOR</h1>
+    
+    <div class="bg">
+       
+       
+        <div class="cal">
+           
+            
+            <form>
+
+            <div>
+                <div class="display">
+                    
+                    <input type="text" name="dis" class="in">
+                </div>
+                <div>
+                    <input class="ac" onclick="dis.value =''" type="button" value="AC">
+                    <input onclick="dis.value =dis.value.toString().slice(0,-1)"type="button" value="DE">
+                    <input onclick="dis.value =dis.value +  '.'"type="button" value=".">
+                    <input onclick="dis.value =dis.value + '/'" type="button" value="/">
+                </div>
+                <div>
+                    <input onclick="dis.value =dis.value + '7' " type="button" value="7">
+                    <input onclick="dis.value =dis.value + '8'" type="button" value="8">
+                    <input onclick="dis.value =dis.value + '9'" type="button" value="9">
+                    <input onclick="dis.value =dis.value + '*' "type="button" value="*">
+                </div>
+                <div>
+                    <input onclick="dis.value =dis.value + '4'" type="button" value="4">
+                    <input onclick="dis.value =dis.value + '5'" type="button" value="5">
+                    <input onclick="dis.value =dis.value +  '6'"type="button" value="6">
+                    <input onclick="dis.value =dis.value +  '-'" type="button" value="-">
+                </div>
+                <div>
+                    <input onclick="dis.value =dis.value + '1'" type="button" value="1">
+                    <input onclick="dis.value =dis.value +  '2'" type="button" value="2">
+                    <input onclick="dis.value =dis.value + '3'"type="button" value="3">
+                    <input onclick="dis.value =dis.value +  '+'" type="button" value="+">
+                </div>
+                <div>
+                    <input onclick="dis.value =dis.value +  '00'" type="button" value="00">
+                    <input onclick="dis.value =dis.value +  '0'" type="button" value="0">
+                    <input onclick="dis.value =dis.value +  '%'" type="button" value="%">
+                    <input onclick="dis.value =eval(dis.value)"  class="equals" type="button" value="=">
+                </div>
+                
+            </div>
+        </form>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+<script href="/script.js"></script>
+</html>
